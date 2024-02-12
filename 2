@@ -1,0 +1,33 @@
+//Separators---------------------------------------------------------------------------------
+  if(Separators_On && Period() <= __Separators_Max_TF)
+    {
+    //Separators for Today and Tomorrow
+    CurrentSeparators("Today", Separators_Color, Separators_Style_01234,
+    Separators_Width_12345);
+
+    CurrentSeparators("Tomorrow", Separators_Color, Separators_Style_01234,
+    Separators_Width_12345);
+
+    //Separators for prior sessions
+    if(__Prior_Days_To_Show > 0)
+      {
+      //Calculate bars per session
+           if (Period()==1) {bps = 1440;}
+      else {if (Period()==5) {bps = 288;}
+      else {if (Period()==15){bps = 96;}
+      else {if (Period()==30){bps = 48;}
+      else {if (Period()==60){bps = 24;}
+      else {if (Period()==240){bps = 6;} }}}}}
+      //Define bar starting prior sessions display
+      shift = iBarShift(NULL,NULL,iTime(NULL,PERIOD_D1,0));
+      //Execute loop for bars per session X number of prior sessions to show
+      for(i= int (shift); i<=(shift+(bps*(__Prior_Days_To_Show))); i++)
+        {
+        if(TimeHour(Time[i]) == 0 && TimeMinute(Time[i]) == 0)
+          {
+          PriorSeparators(i, Separators_Color,
+          Separators_Style_01234, Separators_Width_12345);
+          }
+        }
+      }
+    }//End Separators
