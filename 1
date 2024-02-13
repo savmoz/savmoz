@@ -50,3 +50,16 @@
       {
       ssp=ssp1+j;
       v1=ssp%100;
+if(Levels_On && Period()<= __Levels_Whole_Max_TF)
+    {
+    if(Period()>240 && Levels_Display_Number== 2) {Levels_Display_Number= 3;}
+    //define needed variables
+    ssp1= int (Bid/Poin);  //bid w/o the decimal
+    v1=ssp1%100; //last two significant digits
+    BL=v1; //last two significant digits of starting/reference bid line
+
+    //calculate line levels bottom to top
+    for(j= int (-100-(100-BL)-(100*NumberOfRanges)); j<= int ((100-BL)+(100*NumberOfRanges)); j++)
+      {
+      ssp=ssp1+j;
+      v1=ssp%100;
