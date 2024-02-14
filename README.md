@@ -2,7 +2,7 @@
 - 👀 I’m interested in Bitcoin
 - 🌱 I’m currently learning crpto , trading , VB
 - 💞️ I’m looking to collaborate on ...
-- 📫 How to reach me my goals
+- 📫 How to reach me my goals Focusing on my work 
 - 😄 Pronouns: ...
 - ⚡ Fun fact: sure
 
