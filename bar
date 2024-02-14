@@ -1,0 +1,19 @@
+// From here the code is visited only at every new bar.
+
+
+   if(Close[1] != CloseOld)// Derved kører scriptet kun én gang per brick
+     {
+      CloseOld = Close[1]; //En ny bar forekommer.
+
+      //Alert
+      if(Close[1] > ((High[1] - Low[1])*45/100 + Low[1]) && Open[1] > ((High[1] - Low[1])*45/100 + Low[1]) && Close[1] < iMA(NULL,0,Length,0,MODE_EMA,0,1))
+        {
+         Alert(Symbol(), "  Short signal    ");
+        }
+
+      if(Close[i] < ((High[i] - Low[i])*45/100 + Low[i])&& Open[i] < ((High[i] - Low[i])*45/100 + Low[i]) && Close[i] > iMA(NULL,0,Length,0,MODE_EMA,0,i))
+        {
+         Alert(Symbol(), "  Long signal    ");
+        }
+
+     } //if(Close[1] != CloseOld)
