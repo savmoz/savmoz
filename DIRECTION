@@ -1,0 +1,91 @@
+enum DIRECTION
+{
+  UP,
+  DOWN
+}; 
+
+ 
+
+string indicatorFileName;
+
+
+//--- indicator buffers
+double         Sell4BFArrowBuffer[]; 
+double         Buy4BFArrowBuffer[];
+
+string LabelID = "BR4Fractal_"; 
+
+ int shift,shift1,shift2,shift3;
+double O, O1, O2, C, C1, C2, L, L1, L2, H, H1, H2;
+
+   
+double atr;
+datetime HT,LT;   
+
+int MaxBarLimit = 1000;
+double timeX = 0;
+
+
+#define LONG 1
+#define SHORT -1
+
+
+
+int init()
+{
+      IndicatorBuffers(4);
+      
+    
+      
+      //3BF
+      SetIndexBuffer(0,Sell4BFArrowBuffer); 
+      SetIndexBuffer(1,Buy4BFArrowBuffer);
+      SetIndexStyle(0, DRAW_ARROW,EMPTY,1,clrRed);  //sell
+      SetIndexStyle(1, DRAW_ARROW,EMPTY,1,clrBlue);
+      SetIndexEmptyValue(0,EMPTY_VALUE);
+      SetIndexEmptyValue(1,EMPTY_VALUE);
+      SetIndexArrow(0,116);
+      SetIndexArrow(1,116);
+      
+      pips = GetPipMultiplier(Symbol());
+ 
+   
+      switch(Period())                 // Calculating coefficient for..
+     {
+      // .. different timeframes
+      case     1:
+         LT=PERIOD_M5;
+         HT=PERIOD_M15;
+         break;// Timeframe M1
+      case     5:
+         LT=PERIOD_M1;
+         HT=PERIOD_M15;
+         break;// Timeframe M5
+      case    15:
+         LT=PERIOD_M5;
+         HT=PERIOD_M30;
+         break;// Timeframe M15
+      case    30:
+         LT=PERIOD_M15;
+         HT=PERIOD_H1;
+         break;// Timeframe M30
+      case    60:
+         LT=PERIOD_M30;
+         HT=PERIOD_H4;
+         break;// Timeframe H1
+      case   240:
+         LT=PERIOD_H1;
+         HT=PERIOD_D1;
+         break;// Timeframe H4
+      case  1440:
+         LT=PERIOD_H4;
+         HT=PERIOD_W1;
+         break;// Timeframe D1
+      case 10080:
+         LT=PERIOD_D1;
+         HT=PERIOD_MN1;
+         break;// Timeframe W1
+      case 43200:
+         LT=PERIOD_W1;
+         HT=PERIOD_D1;
+         break;// Timeframe MN
