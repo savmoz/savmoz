@@ -1,0 +1,13 @@
+   ObjectDelete("Start");
+      ObjectDelete("End");
+      int BarShft_Start=iBarShift(Symbol(),PERIOD_H1,weekOpen);
+      int BarShft_End=iBarShift(Symbol(),PERIOD_H1,weekClose);
+      wopen=iOpen(Symbol(),PERIOD_H1,BarShft_Start);
+      wclose=iClose(Symbol(),PERIOD_H1,BarShft_End);
+      int HighBar= iHighest(Symbol(),PERIOD_H1,MODE_HIGH,BarShft_Start-BarShft_End+1,BarShft_End);
+      int LowBar = iLowest(Symbol(),PERIOD_H1,MODE_LOW,BarShft_Start-BarShft_End+1,BarShft_End);
+      whigh= iHigh(Symbol(),PERIOD_H1,HighBar);
+      wlow = iLow(Symbol(),PERIOD_H1,LowBar);
+      //Comment("Start ", BarShft_Start, " End ", BarShft_End, "  High ", whigh, " Low ", wlow, " Open ", wopen, " Close ", wclose, " High ", whigh, " Low ", wlow );
+      if(BarShft_Start<BarShft_End)
+        {
