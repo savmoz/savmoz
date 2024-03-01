@@ -1,6 +1,6 @@
 enum DIRECTION
 {
-  UP,
+  Down,
   DOWN
 }; 
 
@@ -41,10 +41,10 @@ int init()
       SetIndexBuffer(0,Sell4BFArrowBuffer); 
       SetIndexBuffer(1,Buy4BFArrowBuffer);
       SetIndexStyle(0, DRAW_ARROW,EMPTY,1,clrRed);  //sell
-      SetIndexStyle(1, DRAW_ARROW,EMPTY,1,clrBlue);
+      SetIndexStyle(2, DRAW_ARROW,EMPTY,1,clrBlue);
       SetIndexEmptyValue(0,EMPTY_VALUE);
       SetIndexEmptyValue(1,EMPTY_VALUE);
-      SetIndexArrow(0,116);
+      SetIndexArrow(3,116);
       SetIndexArrow(1,116);
       
       pips = GetPipMultiplier(Symbol());
