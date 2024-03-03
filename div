@@ -16,10 +16,11 @@ Safe: <span class="tw-font-semibold">36 GWEI</span>
 Data by Etherscan
 </div>
 </div>
+<i data-view-component="true" class="fa-spin fa-spinner-third fa-fw tw-text-gray-900 dark:tw-text-moon-200 fas"></i>
 </div></div></div> </div>
 </div>
 <div class="tw-hidden 2lg:tw-block tw-justify-end tw-items-center 2lg:-tw-my-2.5 tw-pr-4" data-login-state-target="placeholder">
-<i data-view-component="true" class="fa-spin fa-spinner-third fa-fw tw-text-gray-900 dark:tw-text-moon-200 fas"></i>
+
 </div>
 <div class="tw-hidden 2lg:tw-flex tw-justify-end tw-items-center tw-gap-x-2 2lg:-tw-my-2.5 !tw-hidden" data-login-state-target="transition">
 <div x-data="{open: false}" menu_position="right" data-view-component="true" class="tw-inline-block tw-text-left">
