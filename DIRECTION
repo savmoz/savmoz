@@ -10,8 +10,7 @@ string indicatorFileName;
 
 
 //--- indicator buffers
-double         Sell4BFArrowBuffer[]; 
-double         Buy4BFArrowBuffer[];
+
 
 string LabelID = "BR4Fractal_"; 
 
