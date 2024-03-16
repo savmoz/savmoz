@@ -26,7 +26,7 @@ diffGMT=((timeZoneOfData*3600)+TimeGMTOffset());
                {
                weekOpen=iTime(NULL,PERIOD_H1,z)-diffGMT;
                }
-            weekCount=4;
+            weekCount=40;
             }
       
          }
