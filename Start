@@ -7,6 +7,6 @@
       int HighBar= iHighest(Symbol(),PERIOD_H1,MODE_HIGH,BarShft_Start-BarShft_End+1,BarShft_End);
       int LowBar = iLowest(Symbol(),PERIOD_H1,MODE_LOW,BarShft_Start-BarShft_End+1,BarShft_End);
       whigh= iHigh(Symbol(),PERIOD_H1,HighBar);
-      //Comment("Start ", BarShft_Start, " End ", BarShft_End, "  High ", whigh, " Low ", wlow, " Open ", wopen, " Close ", wclose, " High ", whigh, " Low ", wlow );
+      //Comment("Start ", BarShft_Start, " End ", BarShft_End, "  High ", whigh, " Low " " Open ", wopen, " Close ", wclose, " High ", whigh, " Low ", wlow );
       if(BarShft_Start<BarShft_End)
         {
