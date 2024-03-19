@@ -1,4 +1,4 @@
-// From here the code is visited only at every new bar.
+
 
 
    if(Close[1] != CloseOld)// Derved kører scriptet kun én gang per brick
