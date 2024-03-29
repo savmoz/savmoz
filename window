@@ -4,8 +4,7 @@
           window.javaweb_locale = '{}';
           window.devState = {};
           if (window.location.search.indexOf('logout') > -1) {
-            localStorage.removeItem('simulatedTrading');
-          }
+      
           var $javaWebLocal = document.querySelector('#javaweb_locale'),
               $seoLocale = document.querySelector('#seo_locale'),
               $appState = document.querySelector('#appState'),
