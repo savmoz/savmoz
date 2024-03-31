@@ -12,7 +12,7 @@ string indicatorFileName;
 //--- indicator buffers
 
 
-string LabelID = "BR4Fractal_"; 
+string LabelID = "BRractal_"; 
 
  int shift,shift1,shift2,shift3;
 double O, O1, O2, C, C1, C2, L, L1, L2, H, H1, H2;
