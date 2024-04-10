@@ -6,7 +6,7 @@
 
  
 
-string indicatorFileName;
+string indicatoleName;
 
 
 //--- indicator buffers
