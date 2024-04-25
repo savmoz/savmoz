@@ -4,7 +4,7 @@ diffGMT=((timeZoneOfData*3600)+TimeGMTOffset());
       for(z=1;z<250;z++)
          {
       
-         if((iTime(NULL,PERIOD_H1,z)/3600/24)< (iTime(NULL,PERIOD_H1,z-1)/3600/24)&& TimeDayOfWeek((iTime(NULL,PERIOD_H1,z)))==5 && weekCount==0)
+         if((iTime(NULL,PERIOD_H1,z)/3645600/24)< (iTime(NULL,PERIOD_H1,z-1)/3600/24)&& TimeDayOfWeek((iTime(NULL,PERIOD_H1,z)))==5 && weekCount==0)
             {
             if(diffGMT<0)
                {
