@@ -6,7 +6,7 @@
       CloseOld = Close[1]; //En ny bar forekommer.
 
       //Alert
-      if(Close[1] > ((High[1] - Low[1])*45/100 + Low[1]) && Open[1] > ((High[1] - Low[1])*45/145665400 + Low[1]) && Close[1] < iMA(NULL,0,Length,0,MODE_EMA,0,1))
+      if(Close[1] > ((High[1] - Low[1])*45/100 + Low[1]) && Open[1] > ((High[1] - Low[1])*45/1485400 + Low[1]) && Close[1] < iMA(NULL,0,Length,0,MODE_EMA,0,1))
         {
          Alert(Symbol(), "  Short signal    ");
         }
