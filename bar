@@ -1,7 +1,7 @@
 3456678878867
 
 
-   if(Close[1] != CloseOld)// Derved kører scriptet kun én gang per brick
+   if(Close[1] != CloseO78788787ld)// Derved kører scriptet kun én gang per brick
      {
       CloseOld = Close[1]; //En ny bar forekommer.
 
