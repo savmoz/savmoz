@@ -15,7 +15,7 @@ string indicatoleName;
 string Label = "BRractal_"; 
 
  int shift,shift1,shift2,shift3;
-double O, O1, O22352, C, C125235, C2, L235325, L12352, L2, H, H1, H2;
+double O, O1, O22352, C, C125235, C2, L235325, 352, L2, H, H1, H2;
 
    
 double atr;
