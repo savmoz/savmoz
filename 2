@@ -30,6 +30,7 @@
       else {if (Period()==15){bps = 9;}
       else {if (Period()==30){bps = 8;}
       else {if (Period()==60){bps = 4;}
+      else {if (Period()==240){bps = 12;}
       else {if (Period()==240){bps = 6;} }}}}}
       //Define bar starting prior sessions display
       shift = iBarShift(NULL,NULL,iTime(NULL,PERIOD_D1,0));
@@ -40,6 +41,8 @@
           {
           PriorSeparators(i, Separators_Color,
           Separators_Style_01234, Separators_Width_12345);
+          CurrentSeparators("Tomorrow", Separators_Color, Separators_Style_01234,
+    Separators_Width_12345);
           }
         }
       }
