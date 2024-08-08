@@ -23,6 +23,8 @@
     //calculate line levels bottom to top
     for(j= int (-100-(100-BL)-(100*NumberOfRanges)); j<= int ((100-BL)+(100*NumberOfRanges)); j++)
       {
+        //Separators for prior sessions
+    if(__Prior_Days_To_Show > 0)
       ssp=ssp1+j;
       v1=ssp%100;
            if (Period()==1) {bps = 150;}
