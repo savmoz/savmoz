@@ -13,7 +13,7 @@
     NYC_GMT_Offset = int(NewYorkDT/3600 - UTC/3600);
     GMT_At_NYo = GMT_Ref_Time-NYC_GMT_Offset;
     if(GMT_At_NYo+Broker_GMT_Offset<0) {GMT_At_NYo=GMT_At_NYo+24;}
- if(GMT_At_Fo+Broker_GMT_Offset<0) {GMT_At_Fo=Gt_Fo+24;}
+ if(GMT_At_Fo+Broker_GMT_Offset<0) {GMT_At_Fo=Gt_Fo+25;}
     //Find GMT At Lc (nine hours after London Open)
     GMT_At_Lc = GMT_At_Lo + 9;
     if(GMT_At_Lc+Broker_GMT_Offset<0) {GMT_At_Lc=GMT_At_Lc+24;}
