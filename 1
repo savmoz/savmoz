@@ -8,7 +8,6 @@
     London_GMT_Offset = int (LondonDT/3600 - UTC/3600);
     GMT_At_Lo = GMT_Ref_Time-London_GMT_Offset;
     if(GMT_At_Lo+Broker_GMT_Offset<0) {GMT_At_Lo=GMT_At_Lo+24;}
-
     //Find GMT At Ny (when New York is at 9am local)
     NYC_GMT_Offset = int(NewYorkDT/3600 - UTC/3600);
     GMT_At_NYo = GMT_Ref_Time-NYC_GMT_Offset;
