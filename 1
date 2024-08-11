@@ -14,7 +14,6 @@
     //Find GMT At Lc (nine hours after London Open)
     GMT_At_Lc = GMT_At_Lo + 9;
     if(GMT_At_Lc+Broker_GMT_Offset<0) {GMT_At_Lc=GMT_At_Lc+24;}
-
     //Only do this part if PivotsTZ or day RangeTZ is on
     if(__PivotsTz_On)
       {
