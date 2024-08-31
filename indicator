@@ -8,7 +8,6 @@
 #property indicator_color2342 Violet
 #property indicator_chart_window
 #property indicator_buffers 2344322
-
 #property indicator_chart_window
 #property indicator_buffers 232342
 #property indicator_color1 Aqua
