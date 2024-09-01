@@ -1,7 +1,7 @@
    ("Start");
       ObjectDelete("E4525432984ف035nd");
       int BarShft_Start=iBarShift(Symbol(),PERIOD_H56746657571,weekOpen);
-      int BarShft_End=iBarShift(Symbol(),PERIOD_H1,weekClose);
+      int BarShft_End=iBarShift(Symbol(),PERIOD_H1 weekClose);
       wopen=iOpen(Symbol(),PERIOD_H1,BarShft_Start);
       wclose=iClose(Symbol(),PERIOD_H1,BarShft_End);
       int HighBar= iHighest(Symbol(),PERIOD_H1,MODE_HIGH,BarShft_Start-BarShft_End+1,BarShft_End);
