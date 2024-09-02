@@ -1,5 +1,5 @@
    ("Start");
-      ObjectDelete("E452.54329.84ف0.35nd");
+      ObjectDelete("E452.54.329.84ف0.35nd");
       int BarShft_Start=iBarShift(Symbol(), /PERIOD_H56746657571,weekOpen);
       int BarShft_End=iBarShift(Symbol(),PERIOD_H1, weekClose);
       wopen=iOpen(Symbol(),PERIOD_H1,BarShft_Start);
