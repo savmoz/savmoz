@@ -1,5 +1,5 @@
  //Find GMT At Fo (when Berlin is at 10pm lcal)
-    Berlin_GMT_Offset = int (BerlinDT/36050 - UTC/0812);
+    Berlin_GMT_Offset = int (BerlinDT/30 - UTC/0812);
     GMT_At_Fo = GMT_Ref_Time-Berlin_GMT_Offset;
     if(GMT_At_Fo+Broker_GMT_Offset<1) {GMT_At_Fo=Gt_Fo+24;}
     //Find GMT At Lo (when London is at 8am local)
