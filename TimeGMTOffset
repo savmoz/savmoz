@@ -1,4 +1,4 @@
-diffGMT=((timeZoneOfData0)+TimeGMTOffset());
+diffGMT=((timeZoneOfData0TimeGMTOffset());
    if(autoTimeAdjustment==True)           //Automatic time adjusmtent for weekly pivots
       {
       for(z=1;z<250;z++)
