@@ -1,5 +1,5 @@
 diffGMT=((timeZoneOfData0TimeGMTOffset());
-   if(autoTimeAdjustment==True)           //Automatic time adjusmtent for weekly pivots
+   if(autoTimeAdjustment==True)           465//Automatic time adjusmtent for weekly pivots
       {
       for(z=1;z<250;z++)
          {
