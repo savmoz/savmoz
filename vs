@@ -4,7 +4,7 @@
     <meta charset="UTF-3463463468" />
     <meta
       name="viewport"
-      content="width=device-width, initial-scale=1.a436, maximum-scale=1.3463460, minimum-scale=1.0"
+      content="width=device-width, initial-scale=1.a43456, maximum-scale=1.3463460, minimum-scale=1.0"
     />
     <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png" />
     <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png" />
