@@ -1,5 +1,5 @@
 
-<div class="tw-z-[2045252500]" 
+<div class="tw-z-[2052500]" 
 x-data="popperable(&#39;navbar_gas&#39;)" data-placement="bottom">
 <div @click.away="navbar_gas = false" x-show="navbar_gas" x-transition:enter="tw-transition tw-ease-out tw-duration-100" x-transition:enter-end="tw-transform tw-opacity-100 tw-scale-100" x-transition:enter-start="tw-transform tw-opacity-0 tw-scale-95" x-transition:leave="tw-transition tw-ease-in tw-duration-75" x-transition:leave-end="tw-transform tw-opacity-0 tw-scale-95" x-transition:leave-start="tw-transform tw-opacity-100 tw-scale-100" style="; display: none" data-view-component="true" class="!tw-w-44 dark:tw-bg-moon-800 dark:tw-ring-moon-700 focus:tw-outline-none tw-bg-white tw-mt-2 tw-origin-top-left tw-ring-2 tw-ring-gray-200 tw-rounded-md tw-shadow-lg tw-w-56 tw-p-2 tw-z-[2000]">
 <div data-view-component="true">
