@@ -3,7 +3,7 @@
   DOWN
 hihg
 }; 
-string indicatoleName;
+string in dicatoleName;
 
 
 //--- indicator buffers
